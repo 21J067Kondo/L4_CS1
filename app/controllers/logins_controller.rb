@@ -13,7 +13,7 @@ class LoginsController < ApplicationController
       session[:login_uid]=params[:uid]
       redirect_to "/"
     else
-      render "login"
+      render "logins/error"
     end
   end
 end
